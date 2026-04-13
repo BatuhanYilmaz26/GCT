@@ -1,0 +1,19 @@
+# Environments
+venv/
+env/
+.venv/
+
+# Python caching
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.pytest_cache/
+
+# Virtual environment tooling
+Pipfile.lock
+poetry.lock
+
+# OS Defaults
+.DS_Store
+Thumbs.db
