@@ -41,9 +41,10 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 
 ## 📡 Available Endpoints
 
-### 1. Root Greeting
-Displays basic runtime status.
+### 1. Root Greeting & Interactive Docs
+Displays basic runtime status and directs developers to the built-in Swagger UI testing suite.
 - **URL:** `/`
+- **Swagger UI:** `/docs`
 - **Method:** `GET`
 
 ### 2. Get Location Time (Primary Mechanism)
@@ -52,7 +53,7 @@ Returns the live datetime metrics by interpreting an exact or partial location q
 - **URL:** `/api/v1/time`
 - **Method:** `GET`
 - **Query Parameter:** 
-  - `location` (str) - The city, country, or partial string representation of a place. *(Max Length: 100 char)*
+  - `location` (str) - The city, country, or partial string representation of a place. *(Length constraints: 2-100 chars)*
 
 **Request Example:**
 `GET http://127.0.0.1:8000/api/v1/time?location=Finland`
