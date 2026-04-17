@@ -2,5 +2,4 @@ fastapi
 uvicorn
 pytz
 pycountry
-thefuzz
-python-Levenshtein
+rapidfuzz
