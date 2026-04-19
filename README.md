@@ -330,10 +330,6 @@ What it does include:
 - Structured `404`, `409`, and `500` JSON responses.
 - A generic `500` payload to avoid leaking internal tracebacks to clients.
 
-Important note on true 24/7 uptime:
-
-Application code helps with readiness and recoverability, but real 24/7 uptime still depends on running the process under a supervisor such as a Windows Service, NSSM, Task Scheduler at startup, `systemd`, or a container restart policy. This repository now exposes the operational endpoints needed for that kind of deployment.
-
 ## Testing And Local Validation
 
 Start the API in one terminal:
